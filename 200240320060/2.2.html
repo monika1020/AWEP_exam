@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="2.2.js"></script>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: url("i5.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+            margin-left: 3px;
+
+
+        }
+
+        .i1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: bold;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <h1>Login Form</h1>
+    </div>
+    <div id="i1">
+        <p>User Name</p>
+        <input type="text" placeholder="Enter Username" id="nameid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required>
+        <p>Password</p>
+        <input type="text" id="pid" placeholder="Enter Password " required>
+        <p>Confirm password</p>
+        <input type="text" id="repid" placeholder="Enter Re-password" required><br>
+        <div><button onclick="validate()">Submit</button></div>
+    </div>
+</body>
+
+</html>
